@@ -1,0 +1,488 @@
+Script started on Fri 03 Nov 2017 08:19:24 PM CET
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+]0;joss@CAROLIN: ~joss@CAROLIN:~$ python3
+Python 3.5.2 (default, Nov 17 2016, 17:05:23) 
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 3
+3
+>>> 1 + 1
+2
+>>> 8 - 1
+7
+>>> 10 * 2
+20
+>>> 35 / 5
+7.0
+>>> [K>>> 3 * 2.0
+6.0
+>>> (1 + 3) * 2
+8
+>>> True
+True
+>>> False
+False
+>>> not True
+False
+>>> not False
+True
+>>> 1 == 1
+True
+>>> 2 == 1
+False
+>>> 1 != 1
+False
+>>> 2 != 1
+True
+>>> 1 < 10
+True
+>>> 1 > 10
+False
+>>> 2 <= 2
+True
+>>> 2 >= 2
+True
+>>> 1 < 2 < 3
+True
+>>> 2 < 3 < 2
+False
+>>> "Esto es un string."
+'Esto es un string.'
+>>> 'Esto también es un string
+  File "<stdin>", line 1
+    'Esto también es un string
+                              ^
+SyntaxError: EOL while scanning string literal
+>>> 'Esto también es un string'
+'Esto también es un string'
+>>> "Hola " + "mundo!"
+'Hola mundo!'
+>>> "Esto es un string"[0]
+'E'
+>>> "{} pueden ser {}".format("strings", "interpolados")
+'strings pueden ser interpolados'
+>>> "{0} sé ligero, {0} sé rápido, {0} brinca sobre la {1}".f ormat("Jack", "vela")
+'Jack sé ligero, Jack sé rápido, Jack brinca sobre la vela'
+>>> "{nombre} quiere comer {comida}".format(nombre="Bob", foo d="lasaña") 
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'comida'
+>>> None
+>>> "etc" is None
+False
+>>> None is None
+True
+>>> bool(0)
+False
+>>> bool("")
+False
+>>> bool([])
+False
+>>> bool({})
+False
+>>> print("Soy Python. Encantado de conocerte")
+Soy Python. Encantado de conocerte
+>>> una_variable = 5
+>>> una_variable
+5
+>>> otra_variable
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'otra_variable' is not defined
+>>> lista = []
+>>> otra_lista = [4, 5, 6]
+>>> lista.append(1)
+>>> lista.append(2)
+>>> lista.append(4)
+>>> lo[Kista.append(3)
+>>> print(lista)
+[1, 2, 4, 3]
+>>> lista.pop()
+3
+>>> print(lista)
+[1, 2, 4]
+>>> lista.append(3) 
+>>> lista[0]
+1
+>>> lista[-1]
+3
+>>> lista[4]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> lista[1:3]
+[2, 4]
+>>> lista[2:]
+[4, 3]
+>>> lista[:3]
+[1, 2, 4]
+>>> lista[::2]
+[1, 4]
+>>> lista[::-1]
+[3, 4, 2, 1]
+>>> del lista[2]
+>>> lista + otra_lista
+[1, 2, 3, 4, 5, 6]
+>>> lista.extend(otra_lista)
+>>> 1 in lista
+True
+>>> len(lista) 
+6
+>>> tupla = (1, 2, 3)
+>>> tupla[0]
+1
+>>> tupla[0] = 3
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> len(tupla)
+3
+>>> tupla + (4, 5, 6)
+(1, 2, 3, 4, 5, 6)
+>>> tupla[:2]
+(1, 2)
+>>> 2 in tupla
+True
+>>> a, b, c = (1, 2, 3) 
+>>> d, e, f = 4, 5, 6
+>>> e, d = d, e 
+>>> dicc_vacio = {}
+>>> dicc_lleno = {"uno": 1, "dos": 2, "tres": 3}
+>>> dicc_lleno["uno"]
+1
+>>> list(dicc_lleno.keys())
+['uno', 'tres', 'dos']
+>>> list(dicc_lleno.values())
+[1, 3, 2]
+>>> "uno" in dicc_lleno
+True
+>>> 1 in dicc_lleno
+False
+>>> 
+>>> dicc_lleno["cuatro"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'cuatro'
+>>> dicc_lleno.get("uno")
+1
+>>> dicc_lleno.get("cuatro")
+>>> dicc_lleno.get("uno", 4)
+1
+>>> dicc_lleno.get("cuatro", 4)
+4
+>>> dicc_lleno.setdefault("cinco", 5)
+5
+>>> dicc_lleno.setdefault("cinco", 6)
+5
+>>> del dicc_lleno['uno'] 
+>>> conjunto_vacio = set()
+>>> un_conjunto = {1,2,2,3,4}
+>>> conjunto_lleno.add(5)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'conjunto_lleno' is not defined
+>>> conjunto_lleno.add(5)[C[1P.add(5)[1P.add(5)[1P.add(5)[1P.add(5)[1P.add(5)c.add(5)o.add(5)n.add(5)j.add(5)u.add(5)n.add(5)t.add(5)o.add(5)[1P_conjunto.add(5)[C[C[C[C[C[C[C[C[C[C[C[1P_conjunto.add(5)[C[C[C[C[C[C[C[C[C[C[1Pun_conjunto.add(5)[C[C[C[C[C[C[C[1Pun_conjunto.add(5)[C[C[C[C[C[C[1Pun_conjunto.add(5)[C[C[C[C[C[1Pun_conjunto.add(5)[C[C[C[C
+>>> otro_conjunto = {3, 4, 5, 6
+... `[K][K}
+>>> un_conjunto & otro_conjunto
+{3, 4, 5}
+>>> conjunto_lleno | otro_conjunto
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'conjunto_lleno' is not defined
+>>> {1,2,3,4} - {2,3,5}
+{1, 4}
+>>> 2 in conjunto_lleno
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'conjunto_lleno' is not defined
+>>> 2 in _un[K[K[Kun_conjunto
+True
+>>> 10 in conjunto_lleno[K[K[K[K[K[K[K[K[K[K[K[K[K[Ku_conjunto
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'u_conjunto' is not defined
+>>> 10 in u_conjunton_conjunto
+False
+>>> some_var = 5[1P[1P[1P[1P[1P[1P[1P[1P[1@u[1@n[1@a[1@_[1@v[1@a[1@r[1@i[1@a[1@b[1@l[1@e
+>>> if una_variable > 10:
+...     print("una_variable es completamente mas grande que 1 0.")
+... elif una_variable < 10:
+... 
+  File "<stdin>", line 4
+    
+    ^
+IndentationError: expected an indented block
+>>> elif una_variable < 10:[C[C[C[C    print("una_variable es completamente mas grande que 100.")[A[36Pif una_variable > 10:
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+... if una_variable > 10:[C[C[C[C[2@elif una_variable <[C[C[C[C[C[C[C[C[2Pif una_variable >[C[C[C[C[C[C[C[C[2@elif una_variable <[C[C[C[C[C[C[C[C    print("una_variable es completamente mas grande que 100.")
+... 
+>>> 
+>>> if una_variable > 10:
+...     print("una_variable es completamente mas grande que 1 0.")
+... elif una_variable < 10:
+...     print("una_variable es mas chica que 10.")
+... else:
+...     print("una_variable es de hecho 10.")
+... 
+una_variable es mas chica que 10.
+>>> for i in range(4):
+...     print(i)
+... 
+0
+1
+2
+3
+>>> x = 0
+>>> while x < 4:
+...     print(x)
+...     x += 1
+... 
+0
+1
+2
+3
+>>> try:
+...     raise IndexError("Este es un error de indice")
+... except IndexError as e:
+...     pass
+... 
+>>> dicc_lleno = {"uno": 1, "dos": 2, "tres": 3}
+>>> nuestro_iterable = dicc_lleno.keys()
+>>> print(nuestro_iterable)
+dict_keys(['uno', 'tres', 'dos'])
+>>> for i in nuestro_iterable:
+...     print(i)
+... 
+uno
+tres
+dos
+>>> nuestro_iterable[1]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'dict_keys' object does not support indexing
+>>> nuestro_iterator = iter(nuestro_iterable)
+>>> nuestro_iterator.__next__()
+'uno'
+>>> nuestro_iterator.__next__()
+'tres'
+>>> nuestro_iterator.__next__()
+'dos'
+>>> nuestro_iterator.__next__()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+>>> list(dicc_lleno.keys())
+['uno', 'tres', 'dos']
+>>> def add(x, y):
+...     print("x es {} y y es {}".format(x, y))
+...     return x + y
+... 
+>>> add(5, 6)
+x es 5 y y es 6
+11
+>>> add(y=6, x=5)
+x es 5 y y es 6
+11
+>>> def varargs(*args):
+...     return args
+... 
+>>> varargs(1, 2, 3)
+(1, 2, 3)
+>>> def keyword_args(**kwargs):
+...     return kwargs
+... 
+>>> keyword_args(pie="grande", lago="ness")
+{'lago': 'ness', 'pie': 'grande'}
+>>> def todos_los_argumentos(*args, **kwargs):
+...     print args
+  File "<stdin>", line 2
+    print args
+             ^
+SyntaxError: Missing parentheses in call to 'print'
+>>>     print kwargs[K[K[K[K[K[K(args)
+  File "<stdin>", line 1
+    print (args)
+    ^
+IndentationError: unexpected indent
+>>> print [K(args)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'args' is not defined
+>>> def todos_los_argumentos(*args, **kwargs):
+...     print(args)
+...     print(args)kargs)wargs)
+... 
+>>> args = (1, 2, 3, 4)
+>>> kwargs = {"a": 3, "b": 4}
+>>> odos_los_argumentos(*args)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'odos_los_argumentos' is not defined
+>>> todos_los_argumentos(*args)
+(1, 2, 3, 4)
+{}
+>>> todos_los_argumentos(*args)
+(1, 2, 3, 4)
+{}
+>>> todos_los_argumentos(*args)kargs)wargs)
+('b', 'a')
+{}
+>>> todos_los_argumentos(*args, **kwargs)
+(1, 2, 3, 4)
+{'b': 4, 'a': 3}
+>>> def crear_suma(x):
+...     def suma(y):
+...         return x + y
+...     return suma
+... 
+>>> sumar_10 = crear_suma(10)
+>>> sumar_10(3)
+13
+>>> (lambda x: x > 2)(3)
+True
+>>> map(sumar_10, [1,2,3])
+<map object at 0x7fa6b179d400>
+>>> filter(lambda x: x > 5, [3, 4, 5, 6, 7])
+<filter object at 0x7fa6b179dc88>
+>>> [add_10(i) for i in [1, 2, 3]]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 1, in <listcomp>
+NameError: name 'add_10' is not defined
+>>> [add_10(i) for i in [1, 2, 3]][C[C[C[C[1P[1P[1P[1@s[1@u[1@m[1@r[1P[1@a[1@r
+[11, 12, 13]
+>>> [x for x in [3, 4, 5, 6, 7] if x > 5
+... 
+... 
+... 
+... ~[K+[K*[K]
+[6, 7]
+>>> class Humano(object):
+...     especie = "H. sapiens"
+...     def __init__(self, nombre):
+...         self.nombre = nombre
+...     def decir(self, msg):
+...        return "%s: %s" % (self.nombre, msg)
+...     @classmethod
+...     def get_especie(cls):
+...         return cls.especie
+...     @staticmethod
+...     def roncar():
+...         return "*roncar*"
+... i = Humano(nombre="Ian")
+  File "<stdin>", line 13
+    i = Humano(nombre="Ian")
+    ^
+SyntaxError: invalid syntax
+>>> print i.decir("hi")[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ki = Humano(nombre="Ian")[C[C[C[C        return "*roncar*"[C[C[C[C[C[C[C[C[8Pdef roncar():[C[C[C[C[C[C[C[C@staticmethod[C[C[C[C[C[C[C[C    return cls.especie[C[C[C[C[C[C[C[C[9P@staticmethod[C[C[C[C[C[C[C[Cdef roncar():[C[C[C[C[C[C[C[C@staticmethod[C[C[C[C[C[C[C[Cdef roncar():[C[C[C[C[C[C[C[C    return "*roncar*"[C[C[C[C[1Pi = Humano(nombre="Ian") ="Ian")[C "Ian")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Humano' is not defined
+>>> print i.decir("hi")
+  File "<stdin>", line 1
+    print i.decir("hi")
+          ^
+SyntaxError: invalid syntax
+>>> j = Humano("Joel")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Humano' is not defined
+>>> print j.decir("hello")
+  File "<stdin>", line 1
+    print j.decir("hello")
+          ^
+SyntaxError: invalid syntax
+>>> i.get_especie()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'str' object has no attribute 'get_especie'
+>>> Humano.especie = "H. neanderthalensis"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Humano' is not defined
+>>> i.get_especie()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'str' object has no attribute 'get_especie'
+>>> j.get_especie()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'j' is not defined
+>>> Humano.roncar() 
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Humano' is not defined
+>>> import math
+>>> print(math.sqrt(16))
+4.0
+>>> from math import ceil, floor
+>>> print(ceil(3.7))
+4
+>>> print(floor(3.7))
+3
+>>> import math as m
+>>> math.sqrt(16) == m.sqrt(16)
+True
+>>> import math
+>>> dir(math)
+['__doc__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'copysign', 'cos', 'cosh', 'degrees', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'pi', 'pow', 'radians', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'trunc']
+>>> def duplicar_numeros(iterable):
+...     for i in iterable:
+...         yield i + i
+... 
+>>> 
+>>> _rango = range(1, 900000000)
+>>> for i in duplicar_numeros(_rango):
+...     print(i)
+...     if i >= 30:
+...         break
+... 
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+22
+24
+26
+28
+30
+>>> from functools import wraps
+>>> def pedir(_decir):
+...     @wraps(_decir)
+...     def wrapper(*args, **kwargs):
+...         mensaje, decir_por_favor = _decir(*args, **kwargs )
+...         if decir_por_favor:
+...             return "{} {}".format(mensaje, "¡Por favor! S oy pobre :(")
+...         return mensaje
+...     return wrapper
+... @pedir
+  File "<stdin>", line 9
+    @pedir
+    ^
+SyntaxError: invalid syntax
+>>> def say(decir_por_favor=False):
+...     mensaje = "¿Puedes comprarme una cerveza?"
+...     return mensaje, decir_por_favor
+... print(decir())
+  File "<stdin>", line 4
+    print(decir())
+        ^
+SyntaxError: invalid syntax
+>>> print(decir(decir_por_favor=True))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'decir' is not defined
+>>> exit/[K()
+]0;alfredo@CAROLIN: ~alfredo@CAROLIN:~$ exit
+exit
+
+Script done on Fri 03 Nov 2017 11:44:45 PM CET
